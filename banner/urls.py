@@ -26,6 +26,6 @@ urlpatterns = [
 	url(r'login/', include('shopify_auth.urls')),
 	url(r'^$', views.home, name='home'),	
 	#url(r'pages/our-donations/', views.donations, name='donations'),
-	#url(r'featured', views.featured, name='featured'),
+	url(r'featured', views.featured, name='featured'),
 	#url(r'500', views.custom_500, name='500'),
 ]

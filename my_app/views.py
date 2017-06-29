@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from shopify_auth.decorators import login_required
+from django.http import HttpResponse
 import shopify
 import json
 #from django.views.decorators.csrf import csrf_exempt
@@ -7,14 +8,14 @@ from django.contrib.auth import login as auth_login
 from django.views.decorators.clickjacking import xframe_options_exempt
 
 # Create your views here.
-
+@xframe_options_exempt
 @login_required
 def home(request, *args, **kwargs):	
     return render(request, "my_app/home.html")
 	
 #@json_response
 @xframe_options_exempt
-@login_required
+#@login_required
 def featured(request, *args, **kwargs):
 	#auth_login(request, user)
 	#data = {'foo': 'bar', 'hello': 'world'}
@@ -50,7 +51,7 @@ def featured(request, *args, **kwargs):
 	if 'callback' in request.REQUEST:
 		data = '%s(%s);' % (request.REQUEST['callback'], data)
 		return HttpResponse(data, content_type="application/json")
-	return HttpResponse(jsonp.dumps(data), content_type='application/json')
+	return HttpResponse(json.dumps(data), content_type='application/json')
 	#response = request.post('http://testhuber.myshopify.com/admin/products', data=payload,	headers={'
 	#	'Content-Type': 'application/json', # this is the important part.
 	#'},)
