@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	
+</head>
+<body>
+
+{% load app_filters %}
+
+
+donations: We have donated ${{orders|filteriternum}} to charity
+
+	hi {{user}}!
+	{% with name="World" greeting="Hello" %}     
+
+
+
+{% endwith %}
+the size is {{ orders|length }}
+{% with  greetings=5   counter=1 %} 
+	<!ul>
+        {% for order in orders %}
+        <li>
+            {{ order.id}}
+            <ul>
+			the total order are  {{ order.line_items|length }}
+			</br>
+			
+			test {{ greetings|cut:9 }}
+			
+			
+			
+			
+		
+            </ul>
+        </li>
+        {% endfor %}
+		
+		{% endwith %}
+    </ul>
+-->
+</body>
+</html>
