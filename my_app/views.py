@@ -15,7 +15,7 @@ def home(request, *args, **kwargs):
 	with request.user.session:
 		#products = shopify.Product.find()
 		orders = shopify.Order.find()	
-	return render(request, "my_app/home.html"), {
+	return render(request, "my_app/home.html", {
 		'orders': orders,
 	})
 		
