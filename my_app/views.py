@@ -14,9 +14,9 @@ def home(request, *args, **kwargs):
 	orders=[]
 	with request.user.session:
 		#products = shopify.Product.find()
-		orders = shopify.Order.find()	
+	#	orders = shopify.Order.find()	
 	return render(request, "my_app/home.html", {
-		'orders': orders,
+	#	'orders': orders,
 	})
 		
 #@json_response
