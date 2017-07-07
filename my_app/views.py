@@ -12,13 +12,14 @@ from django.views.decorators.clickjacking import xframe_options_exempt
 @login_required
 def home(request, *args, **kwargs):
 	orders=[]
-	with request.user.session:
+	#with request.user.session:
 		#products = shopify.Product.find()
 	#	orders = shopify.Order.find()	
 	return render(request, "my_app/home.html", {
 		'orders': orders,
 	})
-		
+
+	
 #@json_response
 @xframe_options_exempt
 #@login_required
