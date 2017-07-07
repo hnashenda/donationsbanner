@@ -19,11 +19,11 @@ buttons: {}
 </head>
 <body>
 
-
+{% load app_filters %}
 
 hi {{user}}!
 
-
+We have donated ${{orders|filteriternum}} to charity
 
 
 </body>
