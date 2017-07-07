@@ -43,9 +43,10 @@ class ShopifyConnection(Connection, object):
 		retries = 0
 		while True:
 			try:
-				self.consume_token(uid, 40, 1.95, 0.05)
-				#self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
-				#return self.response
+				#self.consume_token(uid, 40, 1.95, 0.05)
+				self.consume_token(234, 40, 1.95, 0.05)
+				self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+				return self.response
 			except (ConnectionError, ServerError) as err:
 				retries += 1
 				if retries > settings.SHOPIFY_MAX_RETRIES:
