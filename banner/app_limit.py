@@ -6,6 +6,7 @@ from pyactiveresource.connection     import (
     ConnectionError,
     ServerError,
 )
+import memcache
 import shopify
 
 
