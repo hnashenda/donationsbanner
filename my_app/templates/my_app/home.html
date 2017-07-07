@@ -25,28 +25,7 @@ hi {{user}}!
 
 We have donated ${{orders|filteriternum}} to charity
 
-the size is {{ orders|length }}
-{% with  greetings=5   counter=1 %} 
-	<!ul>
-        {% for order in orders %}
-        <li>
-            {{ order.id}}
-            <ul>
-			the total order are  {{ order.line_items|length }}
-			</br>
-			
-			test {{ greetings|cut:9 }}
-			
-			
-			
-			
-		
-            </ul>
-        </li>
-        {% endfor %}
-		
-		{% endwith %}
-    </ul>
+
 
 
 </body>
