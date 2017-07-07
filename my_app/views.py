@@ -17,8 +17,7 @@ def home(request, *args, **kwargs):
 	for item in orders:
 		num+=len(item.line_items)
 	data = {'count':num}
-
-    return render(request, "my_app/home.html")
+	return render(request, "my_app/home.html")
 	
 #@json_response
 @xframe_options_exempt
