@@ -44,7 +44,7 @@ class ShopifyConnection(Connection, object):
 		retries = 0
 		while True:
 			try:
-				self.consume_token(uid, 40, 2, 1)
+				self.consume_token(uid, 40, 1.95, 0.05)
 				self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
 				return self.response
 			except (ConnectionError, ServerError) as err:
