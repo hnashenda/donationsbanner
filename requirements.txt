@@ -3,6 +3,7 @@ chardet==3.0.4
 dj-database-url==0.4.2
 Django==1.8
 django-cors-headers==2.1.0
+django-memcached2==0.2
 django-shopify-auth==0.5.0
 djangorestframework==3.6.3
 docopt==0.6.2
@@ -11,6 +12,7 @@ idna==2.5
 pipreqs==0.4.7
 psycopg2==2.7.1
 pyactiveresource==2.1.2
+python-memcached==1.58
 pytz==2017.2
 PyYAML==3.12
 requests==2.17.3
@@ -21,4 +23,3 @@ virtualenv==15.1.0
 virtualenvwrapper-win==1.2.1
 whitenoise==3.3.0
 yarg==0.1.9
-
