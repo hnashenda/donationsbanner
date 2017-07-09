@@ -8,7 +8,8 @@ from pyactiveresource.connection     import (
 )
 import memcache
 import shopify
-
+#import memcached2
+#memcache = memcached2.Memcache(('memcached://localhost/',))
 
 class ShopifyConnection(Connection, object):
 	response = None
@@ -20,8 +21,11 @@ class ShopifyConnection(Connection, object):
 	def consume_token(self, uid, capacity, rate, min_interval):
 	# Your rate limiting logic here
 		# Get this users last UID
-		last_call_time = memcache.get(uid+"_last_call_time")
-		last_call_value = memcache.get(uid+"_last_call_value")
+		client = memcache.Client(["127.0.0.1:11211"])
+		#last_call_time = memcache.get(uid+"_last_call_time")
+		last_call_time = client.get(uid+"_last_call_time")
+		#last_call_value = memcache.get(uid+"_last_call_value")
+		last_call_value = client.get(uid+"_last_call_value")
 		
 		if last_call_time and last_call_value:
             # Calculate how many tokens are regenerated

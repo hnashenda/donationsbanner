@@ -27,7 +27,29 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Application definition
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+SHOPIFY_MAX_RETRIES = 5
+SHOPIFY_RETRY_WAIT=1
+#CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +61,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	'my_app',
 	'shopify_auth',
+	'django_memcached',
 ]
 
 MIDDLEWARE_CLASSES = [
