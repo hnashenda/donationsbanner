@@ -13,6 +13,7 @@ from pyactiveresource.connection     import (
     ServerError,
 )
 from django.core.cache import cache
+from django.core.cache.backends.memcached import BaseMemcachedCache
 import shopify
 
 #import memcached
@@ -42,7 +43,7 @@ class ShopifyConnection(pyactiveresource.connection.Connection):
 				format=formats.JSONFormat):
 		super(ShopifyConnection, self).__init__(site, user, password, timeout, format)        
 
-	def consume_token(self, uid, capacity, rate, min_interval):
+	def consume_token(uid, capacity, rate, min_interval):
 		# Get this users last UID
 		last_call_time = cache.get(uid+"_last_call_time")
 		last_call_value = cache.get(uid+"_last_call_value")
