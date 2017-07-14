@@ -28,10 +28,10 @@ import shopify
 #client = memcached_udp.Client([('192.168.0.1', 11211), ('192.168.0.5', 11211), ('127.0.0.1', 11211)])
 #client = memcached_udp.Client([('127.0.0.1', 11211)])
 #client.set('key1', 'value1')
-cache.set('key1', 'value1')
+#cache.set('key1', 'value1')
 #r = client.get('key1')
-print ("Stored to memcached, will auto-expire after 15 seconds")
-print (cache.get("key1"))
+#print ("Stored to memcached, will auto-expire after 15 seconds")
+#print (cache.get("key1"))
 
 
 # Store the response from the last request in the connection object
