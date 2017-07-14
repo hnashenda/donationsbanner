@@ -48,8 +48,10 @@ class ShopifyConnection(Connection, object):
 		# Get this users last UID
 		last_call_time = cache.get(uid+"_last_call_time")
 		last_call_value = cache.get(uid+"_last_call_value")
-
-		#print("the last call value")
+		
+		print("the last call time",last_call_time)
+		print("the last call value",last_call_value)
+		#start_time = Time.now
 		
 		if last_call_time and last_call_value:
 			# Calculate how many tokens are regenerated
