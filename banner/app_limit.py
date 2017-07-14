@@ -15,7 +15,7 @@ from pyactiveresource.connection     import (
 from django.core.cache import cache
 import shopify
 
-#import memcache
+#import memcached
 #client = memcache.Client([('127.0.0.1', 11211)])
 #sample_obj = {"name": "Soliman",
 #"lang": "Python"}
@@ -47,7 +47,7 @@ class ShopifyConnection(pyactiveresource.connection.Connection):
 		last_call_time = cache.get(uid+"_last_call_time")
 		last_call_value = cache.get(uid+"_last_call_value")
 
-		print("the last call value")
+		#print("the last call value")
 		
 		if last_call_time and last_call_value:
 			# Calculate how many tokens are regenerated
@@ -70,18 +70,21 @@ class ShopifyConnection(pyactiveresource.connection.Connection):
 		uid = self.site.split("https://")[-1].split(".myshopify.com")[0]
 		self.response = None
 		retries = 0
-		print("the open motiv")
+		#print("the open motiv")
 		while True:
 			try:
-				self.consume_token(uid, 40, 2, settings.SHOPIFY_MIN_TOKENS)
-				self.response = super(ShopifyConnection, self)._open(*args, **kwargs) 
-
+				#self.consume_token(uid, 40, 2, 0.05)
+				self.consume_token(uid, 40, 1.95, 0.05)
+				self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+				return self.response
+				#
                 # Set the memcache reference
-				cache.set_multi( {
-					"_last_call_time": datetime.datetime.strptime(self.response.headers['date'], '%a, %d %b %Y %H:%M:%S %Z'), "_last_call_value": int(self.response.headers['x-shopify-shop-api-call-limit'].split('/',1)[0])}, 
-								key_prefix=uid, time=25)
-				return self.response    
-			except (pyactiveresource.connection.ConnectionError, pyactiveresource.connection.ServerError) as err:
+				#cache.set_multi( {
+				#	"_last_call_time": datetime.datetime.strptime(self.response.headers['date'], '%a, %d %b %Y %H:%M:%S %Z'), "_last_call_value": int(self.response.headers['x-shopify-shop-api-call-limit'].split('/',1)[0])}, 
+				#				key_prefix=uid, time=25)
+				#return self.response    
+			#except (pyactiveresource.connection.ConnectionError, pyactiveresource.connection.ServerError) as err:
+			except (ConnectionError, ServerError) as err:
 				retries += 1
 				if retries > settings.SHOPIFY_MAX_RETRIES:
 					self.response = err.response
