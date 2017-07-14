@@ -36,7 +36,8 @@ import shopify
 
 
 # Store the response from the last request in the connection object
-class ShopifyConnection(pyactiveresource.connection.Connection):
+#class ShopifyConnection(pyactiveresource.connection.Connection):
+class ShopifyConnection(Connection, object):
 	response = None
 
 	def __init__(self, site, user=None, password=None, timeout=None,
