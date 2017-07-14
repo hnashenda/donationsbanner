@@ -10,12 +10,14 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
+#import os
 import os
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
+os.environ['DJANGO_SETTINGS_MODULE'] = 'banner.settings'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -61,7 +63,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	'my_app',
 	'shopify_auth',
-	'django_memcached',
+	#'django_memcached',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -102,36 +104,36 @@ SILENCED_SYSTEM_CHECKS = (
 
 WSGI_APPLICATION = 'banner.wsgi.application'
 
-def get_cache():
-  import os
-  try:
-    os.environ['MEMCACHE_SERVERS'] = os.environ['MEMCACHIER_SERVERS'].replace(',', ';')
-    os.environ['MEMCACHE_USERNAME'] = os.environ['MEMCACHIER_USERNAME']
-    os.environ['MEMCACHE_PASSWORD'] = os.environ['MEMCACHIER_PASSWORD']
-    return {
-      'default': {
-        'BACKEND': 'django_pylibmc.memcached.PyLibMCCache',
-        'TIMEOUT': 500,
-        'BINARY': True,
-        'OPTIONS': { 'tcp_nodelay': True }
-      }
-    }
-  except:
-    return {
-      'default': {
-        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache'
-      }
-    }
+#def get_cache():
+#  import os
+#  try:
+#    os.environ['MEMCACHE_SERVERS'] = os.environ['MEMCACHIER_SERVERS'].replace(',', ';')
+#    os.environ['MEMCACHE_USERNAME'] = os.environ['MEMCACHIER_USERNAME']
+#    os.environ['MEMCACHE_PASSWORD'] = os.environ['MEMCACHIER_PASSWORD']
+#    return {
+#      'default': {
+#        'BACKEND': 'django_pylibmc.memcached.PyLibMCCache',
+#        'TIMEOUT': 500,
+#        'BINARY': True,
+#        'OPTIONS': { 'tcp_nodelay': True }
+#      }
+#    }
+#  except:
+#    return {
+#      'default': {
+#        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache'
+#      }
+#    }
 
-CACHES = get_cache()
+#CACHES = get_cache()
 
 
-#CACHES = {
-#   'default': {
-#      'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-#      'LOCATION': 'my_table_name',
-#   }
-#}
+CACHES = {
+   'default': {
+      'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+      'LOCATION': 'my_table_name',
+   }
+}
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 

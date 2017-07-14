@@ -27,6 +27,6 @@ urlpatterns = [
 	url(r'^$', views.home, name='home'),	
 	#url(r'pages/our-donations/', views.donations, name='donations'),
 	url(r'featured', views.featured, name='featured'),
-	url(r'^cache/', include('django_memcached.urls')),
+	#url(r'^cache/', include('django_memcached.urls')),
 	#url(r'500', views.custom_500, name='500'),
 ]
