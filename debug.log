@@ -534,3 +534,63 @@ Not Found: /favicon.ico
 (0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
 (0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('x8t6mupvhoc1j53zw1kxmyqpoh0wtxh5', '2017-07-12 00:46:48.767211'); args=('x8t6mupvhoc1j53zw1kxmyqpoh0wtxh5', '2017-07-12 00:46:48.767211')
 (0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.007) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+Not Found: /favicon.ico
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."myshopify_domain" = %s' - PARAMS = ('testhuber.myshopify.com',); args=('testhuber.myshopify.com',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.043) QUERY = 'UPDATE "my_app_authappshopuser" SET "token" = %s WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = ('2d1b155b14d786ca13ebf057e95fc9e7', 1); args=('2d1b155b14d786ca13ebf057e95fc9e7', 1)
+(0.001) QUERY = 'SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = %s LIMIT 1' - PARAMS = ('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z',); args=('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.003) QUERY = 'INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT %s AS "session_key", %s AS "session_data", %s AS "expire_date"' - PARAMS = ('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z', 'ZGE0Mjg2ZWQ5NmYxZDdhNjU4ZGQ5M2MyMTZmMDY4ZWVlZTQzNGU1Nzp7fQ==', '2017-07-26 12:13:20.246020'); args=('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z', 'ZGE0Mjg2ZWQ5NmYxZDdhNjU4ZGQ5M2MyMTZmMDY4ZWVlZTQzNGU1Nzp7fQ==', '2017-07-26 12:13:20.246020')
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = %s' - PARAMS = ('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z',); args=('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.002) QUERY = 'DELETE FROM "django_session" WHERE "django_session"."session_key" IN (%s)' - PARAMS = ('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z',); args=('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.002) QUERY = 'UPDATE "my_app_authappshopuser" SET "last_login" = %s WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = ('2017-07-12 12:13:20.734340', 1); args=('2017-07-12 12:13:20.734340', 1)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.000) QUERY = 'UPDATE "django_session" SET "session_data" = %s, "expire_date" = %s WHERE "django_session"."session_key" = %s' - PARAMS = ('NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-26 12:13:20.881292', 'sx0bkxxc49kjgd1vbr0w7gjhaurnle4z'); args=('NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-26 12:13:20.881292', 'sx0bkxxc49kjgd1vbr0w7gjhaurnle4z')
+(0.001) QUERY = 'INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT %s AS "session_key", %s AS "session_data", %s AS "expire_date"' - PARAMS = ('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z', 'NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-26 12:13:20.881292'); args=('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z', 'NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-26 12:13:20.881292')
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z', '2017-07-12 12:13:22.075740'); args=('sx0bkxxc49kjgd1vbr0w7gjhaurnle4z', '2017-07-12 12:13:22.075740')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 63, in _open
+    self.consume_token(uid, 40, 2, settings.SHOPIFY_MIN_TOKENS)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\conf\__init__.py", line 49, in __getattr__
+    return getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SHOPIFY_MIN_TOKENS'
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.007) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.002) QUERY = 'CREATE TABLE "my_table_name" (\n    "cache_key" varchar(255) NOT NULL PRIMARY KEY,\n    "value" text NOT NULL,\n    "expires" datetime NOT NULL\n);' - PARAMS = (); args=None
+(0.000) QUERY = 'CREATE INDEX "my_table_name_expires" ON "my_table_name" ("expires");' - PARAMS = (); args=None
+(0.003) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()

@@ -102,7 +102,12 @@ SILENCED_SYSTEM_CHECKS = (
 
 WSGI_APPLICATION = 'banner.wsgi.application'
 
-
+CACHES = {
+   'default': {
+      'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+      'LOCATION': 'my_table_name',
+   }
+}
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 

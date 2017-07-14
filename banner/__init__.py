@@ -1,1 +1,1 @@
-from banner import rate_limit
+from banner import app_limit

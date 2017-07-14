@@ -1,9 +1,38 @@
 import logging
-from google.appengine.api import memcache
+#from google.appengine.api import memcache
 import datetime
 from datetime import date, timedelta
 from django.conf import settings
 from time import sleep
+from django.conf import settings
+import pyactiveresource
+from pyactiveresource.activeresource import formats
+from pyactiveresource.connection     import (
+    Connection,
+    ConnectionError,
+    ServerError,
+)
+from django.core.cache import cache
+import shopify
+
+#import memcache
+#client = memcache.Client([('127.0.0.1', 11211)])
+#sample_obj = {"name": "Soliman",
+#"lang": "Python"}
+#client.set("sample_user", sample_obj, time=15)
+#print ("Stored to memcached, will auto-expire after 15 seconds")
+#print (client.get("sample_user"))
+
+#import memcached_udp
+
+#client = memcached_udp.Client([('192.168.0.1', 11211), ('192.168.0.5', 11211), ('127.0.0.1', 11211)])
+#client = memcached_udp.Client([('127.0.0.1', 11211)])
+#client.set('key1', 'value1')
+cache.set('key1', 'value1')
+#r = client.get('key1')
+print ("Stored to memcached, will auto-expire after 15 seconds")
+print (cache.get("key1"))
+
 
 # Store the response from the last request in the connection object
 class ShopifyConnection(pyactiveresource.connection.Connection):
@@ -15,9 +44,11 @@ class ShopifyConnection(pyactiveresource.connection.Connection):
 
 	def consume_token(self, uid, capacity, rate, min_interval):
 		# Get this users last UID
-		last_call_time = memcache.get(uid+"_last_call_time")
-		last_call_value = memcache.get(uid+"_last_call_value")
+		last_call_time = cache.get(uid+"_last_call_time")
+		last_call_value = cache.get(uid+"_last_call_value")
 
+		print("the last call value")
+		
 		if last_call_time and last_call_value:
 			# Calculate how many tokens are regenerated
 			now = datetime.datetime.utcnow()
@@ -39,13 +70,14 @@ class ShopifyConnection(pyactiveresource.connection.Connection):
 		uid = self.site.split("https://")[-1].split(".myshopify.com")[0]
 		self.response = None
 		retries = 0
+		print("the open motiv")
 		while True:
 			try:
 				self.consume_token(uid, 40, 2, settings.SHOPIFY_MIN_TOKENS)
 				self.response = super(ShopifyConnection, self)._open(*args, **kwargs) 
 
                 # Set the memcache reference
-				memcache.set_multi( {
+				cache.set_multi( {
 					"_last_call_time": datetime.datetime.strptime(self.response.headers['date'], '%a, %d %b %Y %H:%M:%S %Z'), "_last_call_value": int(self.response.headers['x-shopify-shop-api-call-limit'].split('/',1)[0])}, 
 								key_prefix=uid, time=25)
 				return self.response    
