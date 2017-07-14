@@ -44,7 +44,7 @@ class ShopifyConnection(Connection, object):
 				format=formats.JSONFormat):
 		super(ShopifyConnection, self).__init__(site, user, password, timeout, format)        
 
-	def consume_token(uid, capacity, rate, min_interval):
+	def consume_token(self, uid, capacity, rate, min_interval):
 		# Get this users last UID
 		last_call_time = cache.get(uid+"_last_call_time")
 		last_call_value = cache.get(uid+"_last_call_value")
