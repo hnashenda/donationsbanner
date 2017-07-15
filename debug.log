@@ -1261,3 +1261,5 @@ Not Found: /favicon.ico
 (0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
 (0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
 (0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
