@@ -67,7 +67,7 @@ class ShopifyConnection(Connection, object):
 		#print("the last call value",last_call_value)
 		#start_time = Time.now
 		
-		sleep(wait_time) 
+		sleep(2) 
 		print('sleeping')
 		if wait_time > 0:
 			start_time = datetime.datetime.utcnow()	
