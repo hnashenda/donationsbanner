@@ -59,7 +59,8 @@ class ShopifyConnection(Connection, object):
 		processing_duration = (stop_time - start_time).total_seconds()
 		
 		#wait_time = timedelta(seconds=CYCLE - processing_duration.total_seconds())
-		wait_time = ceil(CYCLE - processing_duration)
+		#wait_time = ceil(CYCLE - processing_duration)
+		wait_time = CYCLE - processing_duration
 		
 		print('the duration is',processing_duration)
 		print('the wait is',wait_time)
@@ -94,7 +95,7 @@ class ShopifyConnection(Connection, object):
 		uid = self.site.split("https://")[-1].split(".myshopify.com")[0]
 		self.response = None
 		retries = 0
-		print("baby it is real")
+		
 		while True:
 			try:
 				#self.consume_token(uid, 40, 2, 0.05)

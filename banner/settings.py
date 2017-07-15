@@ -25,32 +25,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8@)1%xo*sh_!gmb0)&z=&tsmaw#_6+!0%sidexy&t=g#6&052l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
 # Application definition
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'debug.log',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
-SHOPIFY_MAX_RETRIES = 5
-SHOPIFY_RETRY_WAIT=1
+
 #CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
 # Application definition
 
