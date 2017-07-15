@@ -91,3 +91,1112 @@ AttributeError: 'LocMemCache' object has no attribute 'set_multi'
 (0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
 (0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
 (0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.003) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+Not Found: /favicon.ico
+(0.029) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."myshopify_domain" = %s' - PARAMS = ('testhuber.myshopify.com',); args=('testhuber.myshopify.com',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.089) QUERY = 'UPDATE "my_app_authappshopuser" SET "token" = %s WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = ('b05f956d56f55b2a4682f1d47485bb8e', 1); args=('b05f956d56f55b2a4682f1d47485bb8e', 1)
+(0.039) QUERY = 'SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = %s LIMIT 1' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3',); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.078) QUERY = 'INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT %s AS "session_key", %s AS "session_data", %s AS "expire_date"' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', 'ZGE0Mjg2ZWQ5NmYxZDdhNjU4ZGQ5M2MyMTZmMDY4ZWVlZTQzNGU1Nzp7fQ==', '2017-07-28 17:24:30.704905'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', 'ZGE0Mjg2ZWQ5NmYxZDdhNjU4ZGQ5M2MyMTZmMDY4ZWVlZTQzNGU1Nzp7fQ==', '2017-07-28 17:24:30.704905')
+(0.000) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = %s' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3',); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.001) QUERY = 'DELETE FROM "django_session" WHERE "django_session"."session_key" IN (%s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3',); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.001) QUERY = 'UPDATE "my_app_authappshopuser" SET "last_login" = %s WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = ('2017-07-14 17:24:31.218883', 1); args=('2017-07-14 17:24:31.218883', 1)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.000) QUERY = 'UPDATE "django_session" SET "session_data" = %s, "expire_date" = %s WHERE "django_session"."session_key" = %s' - PARAMS = ('NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-28 17:24:31.330726', 'fh42m0r2uc41sryrsrdkprgts2jh8om3'); args=('NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-28 17:24:31.330726', 'fh42m0r2uc41sryrsrdkprgts2jh8om3')
+(0.001) QUERY = 'INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT %s AS "session_key", %s AS "session_data", %s AS "expire_date"' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', 'NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-28 17:24:31.330726'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', 'NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-28 17:24:31.330726')
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 17:24:32.316427'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 17:24:32.316427')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 17:24:37.453142'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 17:24:37.453142')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.003) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 17:49:23.504819'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 17:49:23.504819')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 90, in _open
+    self.consume_token(uid, 40, 1.95, 0.05)
+  File "c:\projects\banner\banner\app_limit.py", line 58, in consume_token
+    wait_time = ceil(CYCLE - processing_duration)
+TypeError: unsupported operand type(s) for -: 'float' and 'datetime.timedelta'
+Not Found: /admin/auth/user/
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:02:54.742861'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:02:54.742861')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:04:40.612553'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:04:40.612553')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\projects\banner\banner\app_limit.py", line 92, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Fri, 14 Jul 2017 18:05:36 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '1', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '1', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=0e422dcd-360d-41fb-a732-c4fc5216d2b4", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=0e422dcd-360d-41fb-a732-c4fc5216d2b4', 'X-Dc': 'ash,chi2', 'X-Request-ID': '0e422dcd-360d-41fb-a732-c4fc5216d2b4'}, msg="Unauthorized")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 105, in _open
+    logging.error("Logging error for _open ShopifyConnection: " + str(uid) + ":" + str(err.message))
+AttributeError: 'UnauthorizedAccess' object has no attribute 'message'
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:24:35.818683'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:24:35.818683')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\projects\banner\banner\app_limit.py", line 92, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Fri, 14 Jul 2017 18:25:31 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '1', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '1', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=70e79788-976b-47d4-8219-866a49e3bde9", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=70e79788-976b-47d4-8219-866a49e3bde9', 'X-Dc': 'ash,chi2', 'X-Request-ID': '70e79788-976b-47d4-8219-866a49e3bde9'}, msg="Unauthorized")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 105, in _open
+    logging.error("Logging error for _open ShopifyConnection: " + str(uid) + ":" + str(err.message))
+AttributeError: 'UnauthorizedAccess' object has no attribute 'message'
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:31:54.713231'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:31:54.713231')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\projects\banner\banner\app_limit.py", line 93, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Fri, 14 Jul 2017 18:32:50 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '1', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '1', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=5f019f07-3a44-43c9-b3c0-802c977bc644", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=5f019f07-3a44-43c9-b3c0-802c977bc644', 'X-Dc': 'ash,chi2', 'X-Request-ID': '5f019f07-3a44-43c9-b3c0-802c977bc644'}, msg="Unauthorized")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 106, in _open
+    logging.error("Logging error for _open ShopifyConnection: " + str(uid) + ":" + str(err.message))
+AttributeError: 'UnauthorizedAccess' object has no attribute 'message'
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:35:44.697176'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:35:44.697176')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:35:52.052248'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:35:52.052248')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:36:30.297871'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:36:30.297871')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\projects\banner\banner\app_limit.py", line 95, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Fri, 14 Jul 2017 18:37:28 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '0', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '0', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=04f9034c-3928-40ef-b5b2-34643edc0495", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=04f9034c-3928-40ef-b5b2-34643edc0495', 'X-Dc': 'ash,chi2', 'X-Request-ID': '04f9034c-3928-40ef-b5b2-34643edc0495'}, msg="Unauthorized")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 108, in _open
+    logging.error("Logging error for _open ShopifyConnection: " + str(uid) + ":" + str(err.message))
+AttributeError: 'UnauthorizedAccess' object has no attribute 'message'
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:40:44.542657'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 18:40:44.542657')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 99, in _open
+    self.consume_token(uid, 40, 1.95, 0.05)
+  File "c:\projects\banner\banner\app_limit.py", line 51, in consume_token
+    print ("time is",start_time)
+UnboundLocalError: local variable 'start_time' referenced before assignment
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 22:03:49.204890'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 22:03:49.204890')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 100, in _open
+    self.consume_token(uid, 40, 1.95, 0.05)
+  File "c:\projects\banner\banner\app_limit.py", line 72, in consume_token
+    start_time = Time.now
+NameError: name 'Time' is not defined
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 22:04:28.719040'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 22:04:28.719040')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\projects\banner\banner\app_limit.py", line 101, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Fri, 14 Jul 2017 22:05:31 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '1', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '1', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=1de9d77a-ed0d-4787-bb36-4f06c4980dd5", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=1de9d77a-ed0d-4787-bb36-4f06c4980dd5', 'X-Dc': 'ash,chi2', 'X-Request-ID': '1de9d77a-ed0d-4787-bb36-4f06c4980dd5'}, msg="Unauthorized")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 114, in _open
+    logging.error("Logging error for _open ShopifyConnection: " + str(uid) + ":" + str(err.message))
+AttributeError: 'UnauthorizedAccess' object has no attribute 'message'
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 22:54:44.325514'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 22:54:44.325514')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\projects\banner\banner\app_limit.py", line 102, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Fri, 14 Jul 2017 22:55:48 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '0', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '0', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=5467e496-6b26-4ddd-b12e-62b0f8364c9b", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=5467e496-6b26-4ddd-b12e-62b0f8364c9b', 'X-Dc': 'ash,chi2', 'X-Request-ID': '5467e496-6b26-4ddd-b12e-62b0f8364c9b'}, msg="Unauthorized")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 115, in _open
+    logging.error("Logging error for _open ShopifyConnection: " + str(uid) + ":" + str(err.message))
+AttributeError: 'UnauthorizedAccess' object has no attribute 'message'
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 23:18:47.799742'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 23:18:47.799742')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\projects\banner\banner\app_limit.py", line 102, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Fri, 14 Jul 2017 23:21:46 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '0', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '0', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=18207eb8-9aa1-4302-bf7c-e636ad273ec0", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=18207eb8-9aa1-4302-bf7c-e636ad273ec0', 'X-Dc': 'ash,chi2', 'X-Request-ID': '18207eb8-9aa1-4302-bf7c-e636ad273ec0'}, msg="Unauthorized")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 115, in _open
+    logging.error("Logging error for _open ShopifyConnection: " + str(uid) + ":" + str(err.message))
+AttributeError: 'UnauthorizedAccess' object has no attribute 'message'
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.004) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.003) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 23:28:21.933618'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 23:28:21.933618')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\projects\banner\banner\app_limit.py", line 102, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Fri, 14 Jul 2017 23:31:20 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '0', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '0', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=e539975d-a2ed-4544-88ce-44b24f2cffe8", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=e539975d-a2ed-4544-88ce-44b24f2cffe8', 'X-Dc': 'ash,chi2', 'X-Request-ID': 'e539975d-a2ed-4544-88ce-44b24f2cffe8'}, msg="Unauthorized")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 115, in _open
+    logging.error("Logging error for _open ShopifyConnection: " + str(uid) + ":" + str(err.message))
+AttributeError: 'UnauthorizedAccess' object has no attribute 'message'
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.004) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.083) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 23:50:40.845079'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-14 23:50:40.845079')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.006) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 103, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Fri, 14 Jul 2017 23:53:45 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '0', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '0', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=a580d7ad-116a-42a1-acf2-836612b5ff36", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=a580d7ad-116a-42a1-acf2-836612b5ff36', 'X-Dc': 'ash,chi2', 'X-Request-ID': 'a580d7ad-116a-42a1-acf2-836612b5ff36'}, msg="Unauthorized")
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:09:04.410504'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:09:04.410504')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 103, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Sat, 15 Jul 2017 00:12:01 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '1', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '1', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=d482c2b2-2030-4ef2-95b6-3ca8ac673716", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=d482c2b2-2030-4ef2-95b6-3ca8ac673716', 'X-Dc': 'ash,chi2', 'X-Request-ID': 'd482c2b2-2030-4ef2-95b6-3ca8ac673716'}, msg="Unauthorized")
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:20:40.772685'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:20:40.772685')
+(0.072) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 103, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Sat, 15 Jul 2017 00:23:37 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '1', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '1', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=9358aa92-6bdd-42f6-98f2-2e96f1e9a441", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=9358aa92-6bdd-42f6-98f2-2e96f1e9a441', 'X-Dc': 'ash,chi2', 'X-Request-ID': '9358aa92-6bdd-42f6-98f2-2e96f1e9a441'}, msg="Unauthorized")
+(0.003) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:34:54.121751'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:34:54.121751')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.001) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:37:24.859239'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:37:24.859239')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.001) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:39:08.416303'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 00:39:08.416303')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 103, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Sat, 15 Jul 2017 00:40:13 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '1', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '1', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=302e148f-316d-4bd0-b7b6-cd046c257046", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=302e148f-316d-4bd0-b7b6-cd046c257046', 'X-Dc': 'ash,chi2', 'X-Request-ID': '302e148f-316d-4bd0-b7b6-cd046c257046'}, msg="Unauthorized")
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+(0.004) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 03:13:34.518131'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 03:13:34.518131')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 103, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Sat, 15 Jul 2017 03:14:37 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '1', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '1', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=89219b35-5e7a-4c82-8829-71f103ade180", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=89219b35-5e7a-4c82-8829-71f103ade180', 'X-Dc': 'ash,chi2', 'X-Request-ID': '89219b35-5e7a-4c82-8829-71f103ade180'}, msg="Unauthorized")
+(0.021) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 12:22:56.958850'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 12:22:56.958850')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+(0.003) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 12:23:48.214545'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 12:23:48.214545')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 286, in _open
+    http_response = self._handle_error(self._urlopen(request))
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 316, in _urlopen
+    return urllib.request.urlopen(request, timeout=self.timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\clickjacking.py", line 61, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\shopify_auth\decorators.py", line 45, in wrapper
+    return f(request, *args, **kwargs)
+  File "c:\projects\banner\my_app\views.py", line 17, in home
+    orders = shopify.Order.find()
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 385, in find
+    return cls._find_every(from_=from_, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\activeresource.py", line 523, in _find_every
+    return cls._build_list(cls.connection.get(path, cls.headers),
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 329, in get
+    return self.format.decode(self._open('GET', path, headers=headers).body)
+  File "c:\projects\banner\banner\app_limit.py", line 103, in _open
+    self.response = super(ShopifyConnection, self)._open(*args, **kwargs)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 288, in _open
+    http_response = self._handle_error(err)
+  File "C:\Users\Hubert\appdata\local\programs\python\python36\lib\site-packages\pyactiveresource\connection.py", line 404, in _handle_error
+    raise UnauthorizedAccess(err)
+pyactiveresource.connection.UnauthorizedAccess: Response(code=401, body="b'{"errors":"[API] Invalid API key or access token (unrecognized login or wrong password)"}'", headers={'Server': 'nginx', 'Date': 'Sat, 15 Jul 2017 12:24:51 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'X-Sorting-Hat-PodId': '4', 'X-Sorting-Hat-PodId-Cached': '1', 'X-Sorting-Hat-ShopId': '20325807', 'X-Sorting-Hat-Section': 'pod', 'X-Sorting-Hat-ShopId-Cached': '1', 'Referrer-Policy': 'origin-when-cross-origin', 'X-Frame-Options': 'DENY', 'X-ShopId': '20325807', 'X-ShardId': '4', 'WWW-Authenticate': 'Basic Realm="Shopify API Authentication"', 'Content-Security-Policy': "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://* shopify-pos://*; block-all-mixed-content; child-src 'self' https://* shopify-pos://*; connect-src 'self' wss://* https://*; script-src https://cdn.shopify.com https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com 'self' 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=b20f2ea5-dbad-4aa9-88ad-5e56776cddbf", 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Forders&source%5Bsection%5D=admin&source%5Buuid%5D=b20f2ea5-dbad-4aa9-88ad-5e56776cddbf', 'X-Dc': 'ash,chi2', 'X-Request-ID': 'b20f2ea5-dbad-4aa9-88ad-5e56776cddbf'}, msg="Unauthorized")
+(0.003) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 12:30:47.475202'); args=('fh42m0r2uc41sryrsrdkprgts2jh8om3', '2017-07-15 12:30:47.475202')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.002) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+(0.000) QUERY = 'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+Not Found: /favicon.ico
+(0.013) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."myshopify_domain" = %s' - PARAMS = ('testhuber.myshopify.com',); args=('testhuber.myshopify.com',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.035) QUERY = 'UPDATE "my_app_authappshopuser" SET "token" = %s WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = ('e251b147e71b355f1132b6af3b24ded0', 1); args=('e251b147e71b355f1132b6af3b24ded0', 1)
+(0.009) QUERY = 'SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = %s LIMIT 1' - PARAMS = ('luy38xzkblb4els3ehareh2t31447o8n',); args=('luy38xzkblb4els3ehareh2t31447o8n',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.002) QUERY = 'INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT %s AS "session_key", %s AS "session_data", %s AS "expire_date"' - PARAMS = ('luy38xzkblb4els3ehareh2t31447o8n', 'ZGE0Mjg2ZWQ5NmYxZDdhNjU4ZGQ5M2MyMTZmMDY4ZWVlZTQzNGU1Nzp7fQ==', '2017-07-29 12:48:34.529558'); args=('luy38xzkblb4els3ehareh2t31447o8n', 'ZGE0Mjg2ZWQ5NmYxZDdhNjU4ZGQ5M2MyMTZmMDY4ZWVlZTQzNGU1Nzp7fQ==', '2017-07-29 12:48:34.529558')
+(0.000) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = %s' - PARAMS = ('luy38xzkblb4els3ehareh2t31447o8n',); args=('luy38xzkblb4els3ehareh2t31447o8n',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.018) QUERY = 'DELETE FROM "django_session" WHERE "django_session"."session_key" IN (%s)' - PARAMS = ('luy38xzkblb4els3ehareh2t31447o8n',); args=('luy38xzkblb4els3ehareh2t31447o8n',)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.001) QUERY = 'UPDATE "my_app_authappshopuser" SET "last_login" = %s WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = ('2017-07-15 12:48:34.807744', 1); args=('2017-07-15 12:48:34.807744', 1)
+(0.000) QUERY = 'BEGIN' - PARAMS = (); args=None
+(0.000) QUERY = 'UPDATE "django_session" SET "session_data" = %s, "expire_date" = %s WHERE "django_session"."session_key" = %s' - PARAMS = ('NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-29 12:48:34.884797', 'luy38xzkblb4els3ehareh2t31447o8n'); args=('NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-29 12:48:34.884797', 'luy38xzkblb4els3ehareh2t31447o8n')
+(0.000) QUERY = 'INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT %s AS "session_key", %s AS "session_data", %s AS "expire_date"' - PARAMS = ('luy38xzkblb4els3ehareh2t31447o8n', 'NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-29 12:48:34.884797'); args=('luy38xzkblb4els3ehareh2t31447o8n', 'NzRkOTk0OGFmOGMxZjAzNGYxZDNjYmQxMTc0OGNjMDBlOTY5NGJkZjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic2hvcGlmeV9hdXRoLmJhY2tlbmRzLlNob3BVc2VyQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImIyMTljZDE0ZTgxMTUyNzM5OTMxZTkxNzk5ZWIxNjhiOTE2MDJlZTkifQ==', '2017-07-29 12:48:34.884797')
+(0.003) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('luy38xzkblb4els3ehareh2t31447o8n', '2017-07-15 12:48:36.353867'); args=('luy38xzkblb4els3ehareh2t31447o8n', '2017-07-15 12:48:36.353867')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.003) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('luy38xzkblb4els3ehareh2t31447o8n', '2017-07-15 12:48:43.303484'); args=('luy38xzkblb4els3ehareh2t31447o8n', '2017-07-15 12:48:43.303484')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.002) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('luy38xzkblb4els3ehareh2t31447o8n', '2017-07-15 12:50:09.267229'); args=('luy38xzkblb4els3ehareh2t31447o8n', '2017-07-15 12:50:09.267229')
+(0.000) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.001) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
+(0.004) QUERY = 'SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = %s AND "django_session"."expire_date" > %s)' - PARAMS = ('luy38xzkblb4els3ehareh2t31447o8n', '2017-07-15 12:50:43.726987'); args=('luy38xzkblb4els3ehareh2t31447o8n', '2017-07-15 12:50:43.726987')
+(0.001) QUERY = 'SELECT "my_app_authappshopuser"."id", "my_app_authappshopuser"."password", "my_app_authappshopuser"."last_login", "my_app_authappshopuser"."myshopify_domain", "my_app_authappshopuser"."token" FROM "my_app_authappshopuser" WHERE "my_app_authappshopuser"."id" = %s' - PARAMS = (1,); args=(1,)
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_time',); args=[':1:testhuber_last_call_time']
+(0.000) QUERY = 'SELECT cache_key, value, expires FROM "my_table_name" WHERE cache_key = %s' - PARAMS = (':1:testhuber_last_call_value',); args=[':1:testhuber_last_call_value']
